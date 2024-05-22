@@ -1,0 +1,40 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: bisque;
+}
+
+.icon-img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav {
+  display: flex;
+  width: 500px;
+  gap: 16px;
+}
+
+ul > li {
+  list-style: none;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+select {
+  font-size: 1.2rem;
+  padding: 4px 10px;
+  margin-right: 20px;
+}
