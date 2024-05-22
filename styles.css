@@ -29,6 +29,7 @@ header {
   background-color: #FFF;
   z-index: 69;
   transition: background-color 0.25s;
+  mix-blend-mode: normal ;
 }
 
 .header-icon {
@@ -87,6 +88,14 @@ ul > li > a:hover {
   #lore {
     flex-direction: column;
   } 
+
+  .map {
+    flex-direction: column;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
+  }
 }
 
 .fa-bars {
@@ -99,7 +108,6 @@ ul > li > a:hover {
     display: none;
   }
 }
-
 
 /* END OF HEADER */
 
@@ -171,6 +179,78 @@ ul > li > a:hover {
 }
 /* END OF LORE */
 
+/* START OF MAPS */
+
+#maps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.maps-header { 
+  text-align: center;
+  font-size: 4rem;
+}
+
+.maps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.map img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.map {
+  display: flex;
+  align-items: center;
+}
+
+/* END OF MAPS */
+
+/* START OF CHARACTERS */
+
+.characters-header {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.characters-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  gap: 24px;  
+}
+
+.characters-container {
+  max-width: 350px;
+  width: 100%;
+  margin: 10px auto 20px auto; 
+}
+
+.characters-container img {
+  height: 350px;
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.characters-container figcaption {
+  font-size: 1.2rem;
+  width: 100%;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* END OF CHARACTERS */
+
 /* MISC */
 
 .loading-screen {
@@ -200,10 +280,4 @@ ul > li > a:hover {
 
 .custom-shape-divider-bottom-1716373770 .shape-fill {
   fill: #FFFFFF;
-}
-
-#maps{
-  display: flex;
-  padding-top: 150p;
-
 }

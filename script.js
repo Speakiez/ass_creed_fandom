@@ -8,11 +8,13 @@ const pageScrollAtTop = (scrollPos) => {
     if (scrollPos === 0) {
       header.style.backgroundColor = "#FFFFFF";
       header.style.boxShadow = "0 0 16px rgba(0, 0, 0, 0.5)";
+      header.style.mixBlendMode = "normal";
       return;
     };
 
     header.style.backgroundColor = "transparent";
     header.style.boxShadow = "none";
+    header.style.mixBlendMode = "difference";
   }, 50);
 }
 
